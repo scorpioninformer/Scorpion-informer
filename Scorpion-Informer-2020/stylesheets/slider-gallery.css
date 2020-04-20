@@ -1,0 +1,736 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.demo-container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  color: white;
+}
+
+.transparent-bg {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.trans-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  will-change: opacity;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.grabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.trans-bg-active {
+  opacity: 0.35;
+}
+
+.photo-container {
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: translate3d(105vw, 0, 0);
+          transform: translate3d(105vw, 0, 0);
+  will-change: transform, opacity;
+  z-index: 1;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.caption {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 90%;
+  left: 35%;
+}
+
+.photo-0 {
+  background-image: url(../img/APPARTMENT1.jpg);
+}
+
+.photo-1 {
+  background-image: url(../img/APPARTMENT2.jpg);
+}
+
+.photo-2 {
+  background-image: url(../img/APPARTMENT3.jpg);
+}
+
+.photo-3 {
+  background-image: url(../img/APPARTMENT4.jpg);
+}
+
+.photo-4 {
+  background-image: url(../img/BANKALHOSAHALLI1.jpg);
+}
+
+.photo-5 {
+  background-image: url(../img/BANKALHOSAHALLI2.jpg);
+}
+
+.photo-6 {
+  background-image: url(../img/BANKALHOSAHALLI3.jpg);
+}
+
+
+.photo-7 {
+  background-image: url(../img/BANKALHOSAHALLI4.jpg);
+}
+
+
+.photo-8 {
+  background-image: url(../img/BANKALHOSAHALLI5.jpg);
+}
+
+
+.photo-9 {
+  background-image: url(../img/BANKALSANDESH1.jpg);
+}
+
+
+.photo-10 {
+  background-image: url(../img/BANKALSANDESH2.jpg);
+}
+
+.photo-11 {
+  background-image: url(../img/BANKALSANDESH3.jpg);
+}
+
+
+.photo-12 {
+  background-image: url(../img/BANKALSANDESH4.jpg);
+}
+
+
+.photo-13 {
+  background-image: url(../img/BANKALSANDESH5.jpg);
+}
+
+
+.photo-14 {
+  background-image: url(../img/BASRIKATTE1.jpg);
+}
+
+
+.photo-15 {
+  background-image: url(../img/BASRIKATTE2.jpg);
+}
+
+
+.photo-16 {
+  background-image: url(../img/BASRIKATTE3.jpg);
+}
+
+
+.photo-17 {
+  background-image: url(../img/BASRIKATTE4.jpg);
+}
+
+
+
+.photo-18 {
+  background-image: url(../img/BASRIKATTE5.jpg);
+}
+
+
+.photo-19 {
+  background-image: url(../img/BIKKARANE.jpg);
+}
+
+
+.photo-20 {
+  background-image: url(../img/CHKM.jpg);
+}
+
+
+.photo-21 {
+  background-image: url(../img/CHKMGOWRI1.jpg);
+}
+
+
+.photo-22 {
+  background-image: url(../img/CHKMGOWRI2.jpg);
+}
+
+
+.photo-23 {
+  background-image: url(../img/CHKMGOWRI3.jpg);
+}
+
+
+.photo-24 {
+  background-image: url(../img/CHKMGOWRI4.jpg);
+}
+
+
+.photo-25 {
+  background-image: url(../img/CHKMGOWRI5.jpg);
+}
+
+
+.photo-26 {
+  background-image: url(../img/CHKMGOWRI6.jpg);
+}
+
+
+.photo-27 {
+  background-image: url(../img/CHKMGOWRI7.jpg);
+}
+
+
+.photo-28 {
+  background-image: url(../img/CHKMGOWRI8.jpg);
+}
+
+
+.photo-29 {
+  background-image: url(../img/CHKMGOWRI9.jpg);
+}
+
+
+.photo-30 {
+  background-image: url(../img/CHKMGOWRI10.jpg);
+}
+
+
+.photo-31 {
+  background-image: url(../img/CHKMGOWRI11.jpg);
+}
+
+
+.photo-32 {
+  background-image: url(../img/DURGADAHALLI1.jpg);
+}
+
+
+.photo-33 {
+  background-image: url(../img/DURGADAHALLI2.jpg);
+}
+
+
+.photo-34 {
+  background-image: url(../img/DURGADAHALLISAMPATH1.jpg);
+}
+
+
+.photo-35 {
+  background-image: url(../img/DURGADAHALLISAMPATH2.jpg);
+}
+
+
+.photo-36 {
+  background-image: url(../img/DURGADAHALLISAMPATH3.jpg);
+}
+
+
+.photo-37 {
+  background-image: url(../img/DURGADAHALLISANDESH1.jpg);
+}
+
+
+.photo-38 {
+  background-image: url(../img/DURGADAHALLISANDESH2.jpg);
+}
+
+
+.photo-38 {
+  background-image: url(../img/DURGADAHALLISANDESH3.jpg);
+}
+
+
+.photo-39 {
+  background-image: url(../img/ESHWARA1.jpg);
+}
+
+
+.photo-40 {
+  background-image: url(../img/ESHWARA2.jpg);
+}
+
+
+.photo-41 {
+  background-image: url(../img/ESHWARA3.jpg);
+}
+
+
+.photo-42 {
+  background-image: url(../img/ESHWARA4.jpg);
+}
+
+
+.photo-43 {
+  background-image: url(../img/ESHWARA5.jpg);
+}
+
+
+.photo-44 {
+  background-image: url(../img/ESHWARA6.jpg);
+}
+
+
+.photo-45 {
+  background-image: url(../img/ESHWARA7.jpg);
+}
+
+
+.photo-46 {
+  background-image: url(../img/ESTATE1.jpg);
+}
+
+
+.photo-47 {
+  background-image: url(../img/ESTATE2.jpg);
+}
+
+
+.photo-48 {
+  background-image: url(../img/ESTATE3.jpg);
+}
+
+
+.photo-49 {
+  background-image: url(../img/ESTATE4.jpg);
+}
+
+
+.photo-50 {
+  background-image: url(../img/ESTATE5.jpg);
+}
+
+
+.photo-51 {
+  background-image: url(../img/ESTATE6.jpg);
+}
+
+
+.photo-52 {
+  background-image: url(../img/ESTATE7.jpg);
+}
+
+
+.photo-53 {
+  background-image: url(../img/ESTATE8.jpg);
+}
+
+
+.photo-54 {
+  background-image: url(../img/ESTATE9.jpg);
+}
+
+
+.photo-55 {
+  background-image: url(../img/ESTATE10.jpg);
+}
+
+
+.photo-56 {
+  background-image: url(../img/ESTATE11.jpg);
+}
+
+
+.photo-57 {
+  background-image: url(../img/ESTATE12.jpg);
+}
+
+
+.photo-58 {
+  background-image: url(../img/ESTATE13.jpg);
+}
+
+
+.photo-59 {
+  background-image: url(../img/GODOWN1.jpg);
+}
+
+
+.photo-60 {
+  background-image: url(../img/GODOWN2.jpg);
+}
+
+
+.photo-61 {
+  background-image: url(../img/GODOWN3.jpg);
+}
+
+
+.photo-62 {
+  background-image: url(../img/GODOWN4.jpg);
+}
+
+
+.photo-63 {
+  background-image: url(../img/GODOWN5.jpg);
+}
+
+
+.photo-64 {
+  background-image: url(../img/GONIBIDU1.jpg);
+}
+
+
+.photo-65 {
+  background-image: url(../img/GONIBIDU2.jpg);
+}
+
+
+.photo-66 {
+  background-image: url(../img/HARIHARAPURA1.jpg);
+}
+
+
+.photo-67 {
+  background-image: url(../img/HARIHARAPURA2.jpg);
+}
+
+
+.photo-68 {
+  background-image: url(../img/HARIHARAPURA3.jpg);
+}
+
+
+.photo-69 {
+  background-image: url(../img/HARISH1.jpg);
+}
+
+
+.photo-70 {
+  background-image: url(../img/HARISH2.jpg);
+}
+
+
+.photo-71 {
+  background-image: url(../img/HARISH3.jpg);
+}
+
+
+.photo-72 {
+  background-image: url(../img/HARISH4.jpg);
+}
+
+
+.photo-73 {
+  background-image: url(../img/HOME1.jpg);
+}
+
+
+.photo-74 {
+  background-image: url(../img/HOME2.jpg);
+}
+
+
+.photo-75 {
+  background-image: url(../img/HOME3.jpg);
+}
+
+
+.photo-76 {
+  background-image: url(../img/HOME4.jpg);
+}
+
+
+.photo-77 {
+  background-image: url(../img/HOSAHALLI1.jpg);
+}
+
+
+.photo-78 {
+  background-image: url(../img/HOSAHALLI2.jpg);
+}
+
+
+.photo-79 {
+  background-image: url(../img/HOSAHALLI3.jpg);
+}
+
+
+.photo-80 {
+  background-image: url(../img/HOSAHALLI4.jpg);
+}
+
+
+.photo-81 {
+  background-image: url(../img/HUIGERESACHIN.jpg);
+}
+
+
+.photo-82 {
+  background-image: url(../img/KADTURNITYANANDA1.jpg);
+}
+
+
+.photo-83 {
+  background-image: url(../img/KADTURNITYANANDA2.jpg);
+}
+
+
+.photo-84 {
+  background-image: url(../img/KADTURNITYANANDA3.jpg);
+}
+
+
+.photo-85 {
+  background-image: url(../img/KASHI1.jpg);
+}
+
+
+.photo-86 {
+  background-image: url(../img/KASHI2.jpg);
+}
+
+
+.photo-87 {
+  background-image: url(../img/KUNDURSUKUMAR1.jpg);
+}
+
+
+.photo-88 {
+  background-image: url(../img/KUNDURSUKUMAR2.jpg);
+}
+
+
+.photo-89 {
+  background-image: url(../img/KUNDURSUKUMAR3.jpg);
+}
+
+
+.photo-90 {
+  background-image: url(../img/LICABHI1.jpg);
+}
+
+
+.photo-91 {
+  background-image: url(../img/LICABHI2.jpg);
+}
+
+
+.photo-92 {
+  background-image: url(../img/MYSORE3.jpg);
+}
+
+
+.photo-93 {
+  background-image: url(../img/NEW1.jpg);
+}
+
+
+.photo-94 {
+  background-image: url(../img/NEW2.jpg);
+}
+
+
+.photo-95 {
+  background-image: url(../img/NEW3.jpg);
+}
+
+
+.photo-96 {
+  background-image: url(../img/NEW4.jpg);
+}
+
+
+.photo-97 {
+  background-image: url(../img/NEWCURVE1.jpg);
+}
+
+
+.photo-98 {
+  background-image: url(../img/NEWCURVE2.jpg);
+}
+
+
+.photo-99 {
+  background-image: url(../img/NEWCURVE3.jpg);
+}
+
+
+.photo-100 {
+  background-image: url(../img/SACHIN1.jpg);
+}
+
+
+.photo-101 {
+  background-image: url(../img/SACHIN2.jpg);
+}
+
+
+.photo-102 {
+  background-image: url(../img/SACHIN3.jpg);
+}
+
+
+.photo-103 {
+  background-image: url(../img/SACHIN4.jpg);
+}
+
+
+.photo-104 {
+  background-image: url(../img/SARAGODULODGE1.jpg);
+}
+
+
+.photo-105 {
+  background-image: url(../img/SARAGODULODGE2.jpg);
+}
+
+
+.photo-106 {
+  background-image: url(../img/SARAGODULODGE3.jpg);
+}
+
+
+.photo-107 {
+  background-image: url(../img/TALGUR.jpg);
+}
+
+
+.photo-108 {
+  background-image: url(../img/VILLA1.jpg);
+}
+
+
+.photo-109 {
+  background-image: url(../img/VILLA2.jpg);
+}
+
+
+.photo-110 {
+  background-image: url(../img/YADIYURU1.jpg);
+}
+
+
+.photo-111 {
+  background-image: url(../img/YADIYURU2.jpg);
+}
+
+
+.photo-112 {
+  background-image: url(../img/YADIYURU3.jpg);
+}
+
+
+.photo-113 {
+  background-image: url(../img/YADIYURU4.jpg);
+}
+
+
+.photo-114 {
+  background-image: url(../img/ZMYSORE1.jpg);
+}
+
+
+.photo-115 {
+  background-image: url(../img/ZMYSORE2.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photo-active {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+.photo-left {
+  -webkit-transform: translate3d(-105vw, 0, 0);
+          transform: translate3d(-105vw, 0, 0);
+}
+
+.animation {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.indicator {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  text-align: center;
+  font-family: "Times New Roman;
+  -webkit-transform: translate(-50%, -102%);
+          transform: translate(-50%, -102%);
+  padding: 2px;
+  border-radius: 4px;
+  z-index: 2;
+  background: black;
+  color: white;
+font-size: 40px;
+    
+}
+
+@media only screen and (max-width: 360px) {
+  .caption {
+    font-size: 0.9rem;
+  }
+}
